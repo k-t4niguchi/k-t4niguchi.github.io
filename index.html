@@ -2,19 +2,54 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakura Pixel</title>
     <style>
         body { background-color: #000; color: #fff; text-align: center; font-family: sans-serif; padding-top: 50px; }
-        h1 { color: #ff69b4; letter-spacing: 2px; }
-        .chara { font-size: 1.2em; margin: 20px; }
+        h1 { color: #ff69b4; letter-spacing: 2px; text-shadow: 0 0 10px rgba(255,105,180,0.5); }
+        
+        .app-container { margin: 40px auto; max-width: 600px; }
+        .chara { font-size: 1.4em; margin-bottom: 5px; font-weight: bold; }
+        
+        /* リンクボタンのスタイル */
+        .play-link {
+            display: inline-block;
+            color: #ff69b4;
+            text-decoration: none;
+            border: 1px solid #ff69b4;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: 0.3s;
+            margin-bottom: 30px;
+        }
+        .play-link:hover {
+            background-color: #ff69b4;
+            color: #fff;
+        }
+
         .footer { font-size: 0.8em; color: #666; margin-top: 50px; }
     </style>
 </head>
 <body>
     <h1>Sakura Pixel</h1>
-    <p class="chara">GIRLS PALETTE</p>
+
+    <div class="app-container">
+        <p class="chara">GIRLS PALETTE</p>
+        <a href="https://play.google.com/store/apps/details?id=com.kiminy.girlspalette" class="play-link" target="_blank">
+            GET IT ON Google Play
+        </a>
+
+        <p class="chara">WORK HARD & JUMP</p>
+        <a href="https://play.google.com/store/apps/details?id=com.sakurapixel.workhardjump" class="play-link" target="_blank">
+            GET IT ON Google Play
+        </a>
+    </div>
+
     <p>Google Play にて絶賛配信中！</p>
+    
     <hr style="width: 50%; border: 0.5px solid #333; margin: 30px auto;">
+    
     <div class="footer">
         &copy; 2026 Sakura Pixel
     </div>
